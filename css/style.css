@@ -9772,3 +9772,13 @@ textarea.form-control {
 .progress-bar {
   animation: progress-animation 2s ease-out;
 }
+
+
+/* Example CSS if you use a background class */
+.navbar {
+  transition: background 0.3s;
+}
+
+.navbar.no-background {
+  background: none;
+}
