@@ -22,37 +22,6 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
-	<style>
-		.my_img {
-  background-size: cover; /* Ensures the image covers the div */
-  background-position: center; /* Centers the image */
-}
-
-@media (max-width: 768px) {
-  .slider-item {
-    height: auto; /* Allows the slider item to adjust height on smaller screens */
-  }
-
-  .my_img {
-    width: 100%; /* Ensures the image takes the full width on smaller screens */
-    height: auto; /* Ensures the image scales properly */
-    margin-bottom: 20px; /* Adjust as needed */
-  }
-
-  .ftco-animate .text {
-    text-align: center; /* Center text for better appearance on small screens */
-  }
-
-  .ftco-animate .text h1, .ftco-animate .text h2 {
-    font-size: 1.5rem; /* Adjust font size for readability on smaller screens */
-  }
-
-  .ftco-animate .text p {
-    text-align: center; /* Center the button */
-  }
-}
-
-	</style>
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 
@@ -78,21 +47,23 @@
 		</div>
 	  </nav>
 
-	  <section id="home-section" class="hero">
+	  	<section id="home-section" class="hero">
 		<div class="home-slider owl-carousel">
 		  <div class="slider-item">
 			<div class="overlay"></div>
 			<div class="container">
 			  <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-				<div class="col-md-6 col-lg-6 order-md-last img my_img" style="background-image:url(images/my_bg_img.png); background-size: cover; width: 100%; margin-bottom: 100px;">
+				<div class="one-third js-fullheight order-md-last img my_img" style="background-image:url(images/my_bg_img.png); background-size:initial; width: 95vh;margin-bottom:100px">
 				  <div class="overlay"></div>
 				</div>
-				<div class="col-md-6 col-lg-6 d-flex align-items-center ftco-animate" data-scrollax="properties: { translateY: '70%' }">
+				<div class="one-forth d-flex align-items-center ftco-animate" data-scrollax="properties: { translateY: '70%' }">
 				  <div class="text">
 					<span class="subheading unique_color">Hello!</span>
 					<h1 class="mb-4 mt-3 unique_color">I'm <span class="textColor">Izaz Ur Rahman</span></h1>
 					<h2 class="mb-4"><span id="typing-animation"></span></h2>
-					<p><a href="#contact-section" class="btn btn-primary py-3 px-4">Hire Me</a></p>
+					<p><a href="#contact-section" class="btn btn-primary py-3 px-4">Hire Me</a>
+
+					</p>
 				  </div>
 				</div>
 			  </div>
@@ -102,15 +73,17 @@
 			<div class="overlay"></div>
 			<div class="container">
 			  <div class="row d-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-				<div class="col-md-6 col-lg-6 order-md-last img my_img" style="background-image:url(images/profile-removebg-preview.png); width: 100%; height: auto; background-size: cover; margin-bottom: 150px;">
+				<div class="one-third js-fullheight order-md-last img my_img" style="background-image:url(images/profile-removebg-preview.png); width: 95vh; height: auto; background-size: initial; margin-bottom: 150px;">
 				  <div class="overlay"></div>
 				</div>
-				<div class="col-md-6 col-lg-6 d-flex align-items-center ftco-animate" data-scrollax="properties: { translateY: '70%' }">
+				<div class="one-forth d-flex align-items-center ftco-animate" data-scrollax="properties: { translateY: '70%' }">
 				  <div class="text">
 					<span class="subheading unique_color">Hello!</span>
-					<h1 class="mb-4 mt-3 unique_color">I'm a <span class="textColor">Web Developer</span></h1>
-					<h2 class="mb-4"><span id="typing-animation"></span></h2>
-					<p><a href="#contact-section" class="btn btn-primary py-3 px-4">Hire Me</a></p>
+					<h1 class="mb-4 mt-3 unique_color">I'm a <span class="textColor">Web Developer</span> </h1>
+					<h2 class="mb-4 "><span   id="typing-animation"></span></h2>
+					<p><a href="#contact-section" class="btn btn-primary py-3 px-4">Hire Me</a>
+
+					</p>
 				  </div>
 				</div>
 			  </div>
@@ -118,32 +91,7 @@
 		  </div>
 		</div>
 	  </section>
-<script>
-	$(document).ready(function() {
-  $('.home-slider').owlCarousel({
-    items: 1,
-    loop: true,
-    nav: true,
-    dots: true,
-    responsiveClass: true,
-    responsive: {
-      0: {
-        items: 1,
-        nav: false
-      },
-      600: {
-        items: 1,
-        nav: false
-      },
-      1000: {
-        items: 1,
-        nav: true
-      }
-    }
-  });
-});
 
-</script>
     <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
     	<div class="container">
     		<div class="row d-flex">
