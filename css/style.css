@@ -8143,9 +8143,7 @@ box-shadow: 0 4px 8px rgba(10, 30, 10, 0.1);
   font-size: 16px;
   line-height: 1.8;
   font-weight: 400;
-  overflow: scroll;
-  -webkit-overflow-scrolling: touch;
-  height: 100%;
+
   color: #999999; }
   body.menu-show {
     overflow: hidden;
