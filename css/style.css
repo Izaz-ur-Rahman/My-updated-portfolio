@@ -9799,7 +9799,7 @@ textarea.form-control {
   }
 
   .home-slider {
-    overflow: visible;
+    overflow: visible !important;
   }
 
   .container {
@@ -9808,7 +9808,7 @@ textarea.form-control {
 }
 
 html, body {
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 .hero, .home-slider, .slider-item, .one-third, .one-forth, .container {
