@@ -8109,6 +8109,9 @@ a.text-dark:hover, a.text-dark:focus {
   @page {
     size: a3; }
   body {
+    overflow: scroll;
+-webkit-overflow-scrolling: touch;
+height: 100%;
     min-width: 992px !important; }
   .container {
     min-width: 992px !important; }
@@ -9054,7 +9057,7 @@ textarea.form-control {
 
 .ftco-animate {
   opacity: 0;
-  visibility:visible; }
+  visibility:hidden; }
 
 .bg-primary {
   background: #ffbd39 !important; }
