@@ -9773,48 +9773,4 @@ textarea.form-control {
   animation: progress-animation 2s ease-out;
 }
 
-    /* for scrolling issue */
-.my_img {
-  background-size: cover;
-  background-position: center;
-}
-
-@media (max-width: 768px) {
-  .slider-item {
-    height: auto;
-  }
-
-  .one-third {
-    width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-  }
-
-  .one-forth {
-    width: 100%;
-  }
-
-  .hero {
-    height: auto;
-  }
-
-  .home-slider {
-    overflow: visible !important;
-  }
-
-  .container {
-    padding: 0 15px;
-  }
-}
-
-html, body {
-  overflow-x: hidden !important;
-}
-
-.hero, .home-slider, .slider-item, .one-third, .one-forth, .container {
-  overflow: visible !important;
-}
-
-body {
-  position: relative;
-}
+ 
