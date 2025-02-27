@@ -9775,3 +9775,36 @@ textarea.form-control {
   animation: progress-animation 2s ease-out;
 }
 
+
+
+
+
+.scroll-circle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 100px;
+  height: 100px;
+}
+
+.scroll-circle svg {
+  width: 100%;
+  height: 100%;
+}
+
+.scroll-circle svg circle {
+  stroke: #333;
+  stroke-dasharray: 251.327;
+  stroke-dashoffset: 251.327;
+  transition: stroke-dashoffset 0.5s ease;
+}
+
+.scroll-circle .percentage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
