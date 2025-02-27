@@ -275,3 +275,16 @@
 
 })(jQuery);
 
+const progressCircle = document.querySelector('.circle-progress');
+const percentageText = document.querySelector('.percentage-text');
+const circumference = 2 * Math.PI * 38; // Circumference of the circle
+
+window.addEventListener('scroll', () => {
+	const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+	const scrollPercentage = Math.round((window.scrollY / scrollHeight) * 100); // Convert to percentage
+	const strokeDashOffset = circumference * (1 - scrollPercentage / 100);
+
+	progressCircle.style.strokeDashoffset = strokeDashOffset;
+	percentageText.textContent = `${scrollPercentage}%`; // Update text dynamically
+});
+

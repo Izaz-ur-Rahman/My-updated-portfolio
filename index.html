@@ -709,63 +709,6 @@
         <span class="percentage-text">0%</span>
     </div>
 
-	  <style>
-
-.progress-container {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            width: 100px;
-            height: 100px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-family: Arial, sans-serif;
-            font-weight: bold;
-			z-index: 1111;
-        }
-        svg {
-            position: absolute;
-			overflow: visible;
-            transform: rotate(-90deg); /* Start from top */
-        }
-        .circle-bg {
-            fill: none;
-            stroke: #ddd;
-            stroke-width: 6;
-        }
-        .circle-progress {
-            fill: none;
-            stroke: #3498db;
-            stroke-width: 6;
-            stroke-linecap: round;
-            stroke-dasharray: 251; /* Total circumference */
-            stroke-dashoffset: 251; /* Start fully empty */
-            transition: stroke-dashoffset 0.1s linear;
-        }
-        .percentage-text {
-            position: absolute;
-            font-size: 18px;
-            color: #3498db;
-        }
-	  </style>
-<script>
-    const progressCircle = document.querySelector('.circle-progress');
-        const percentageText = document.querySelector('.percentage-text');
-        const circumference = 2 * Math.PI * 38; // Circumference of the circle
-
-        window.addEventListener('scroll', () => {
-            const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
-            const scrollPercentage = Math.round((window.scrollY / scrollHeight) * 100); // Convert to percentage
-            const strokeDashOffset = circumference * (1 - scrollPercentage / 100);
-
-            progressCircle.style.strokeDashoffset = strokeDashOffset;
-            percentageText.textContent = `${scrollPercentage}%`; // Update text dynamically
-        });
-
-
-
-</script>
 	<footer class="ftco-footer ftco-section">
 		<div class="container">
 			<div class="row mb-5">
